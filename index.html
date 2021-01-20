@@ -95,7 +95,7 @@
 					const distance =  currentDate - deadlineDate ;
 
 					// Calculations the data for remaining days, hours, minutes and seconds
-					const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					const days = Math.floor((distance / (1000 * 60 * 60 * 24))+2);
 					const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 					const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 					const seconds = Math.floor((distance % (1000 * 60)) / 1000);
